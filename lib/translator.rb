@@ -14,6 +14,8 @@ def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
   if lirbary["get_emoticon"].include?(emoticon)
     library["get_emoticon"][emoticon]
+  else 
+    "#{emotion} does not exist"
   end
 end
 
