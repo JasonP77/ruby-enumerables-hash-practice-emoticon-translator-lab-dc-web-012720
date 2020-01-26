@@ -15,7 +15,7 @@ def get_japanese_emoticon(file_path , western_emoticon)
   if library["get_emoticon"].include?(western_emoticon) 
     library["get_emoticon"][western_emoticon]
   else
-    "sorry, it does not exist"
+     "Sorry, that emoticon was not found"
   end
 end
 
