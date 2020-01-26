@@ -5,7 +5,7 @@ def load_library(file_path)
   result = {"meaning_of_emoticon" => {}, "emoticon" => {}}
   collection.each do |means, emoticons|
     result["meaning_of_emoticon"][emoticons[1]] = means
-    result["emoticons"][emoticons[0]] = emoticons[1]
+    result["emoticon"][emoticons[0]] = emoticons[1]
   end
   collection
 end
