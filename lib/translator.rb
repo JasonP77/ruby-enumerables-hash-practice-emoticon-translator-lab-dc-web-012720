@@ -2,10 +2,10 @@
 require "yaml"
 def load_library(file_path)
   library = YAML.load_file(file_path)
-  result = {"mean" => {}, "get_emoticon" => {}}
+  result = {"mean" => {}, "emoticons" => {}}
   library.each do |meaning, emoticons|
-    result["meaning"][emoticons[1]] = meaning
-    result["get_emoticon"][emoticons[0]] = emoticons[1]
+    result["mean"][emoticons[1]] = meaning
+    result["emoticons"][emoticons[0]] = emoticons[1]
   end
   result
 end
