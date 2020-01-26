@@ -7,7 +7,7 @@ def load_library(file_path)
     result["meaning_of_emoticon"][emoticons[1]] = means
     result["emoticons"][emoticons[0]] = emoticons[1]
   end
-  result
+  collection
 end
 
 def get_japanese_emoticon
