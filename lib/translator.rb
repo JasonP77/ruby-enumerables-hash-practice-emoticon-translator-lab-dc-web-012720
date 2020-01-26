@@ -1,11 +1,11 @@
 # require modules here
 require "yaml"
 def load_library(file)
-  collection = YAML.load_file(file)
-  final = {"mean" => {}, "emoticons" => {}}
+  library = YAML.load_file(file_path)
+  result = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|
-    result["mean"][emoticons[1]] = meaning
-    result["emoticons"][emoticons[0]] = emoticons[1]
+    result["get_meaning"][emoticons[1]] = meaning
+    result["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   result
 end
